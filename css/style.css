@@ -68,7 +68,9 @@ nav ul{
     text-align: center;
 }
 
-
+.movies{
+    padding-top:5%;
+}
 
 /*Filmovi*/
 .gallery-image{
