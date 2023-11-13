@@ -31,10 +31,12 @@ ul{
     justify-content: space-between;
 }
 #main-header{
-    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #f0f0f0;
     position: fixed;
     width: 100%;
+    
 }
 #logo h1{
     font-size: 28px;
@@ -51,19 +53,19 @@ nav ul li a:hover, nav ul .active-link a{
     color: var(--darkGrey);
 }
 nav ul{
-    margin-top:12px;
+    margin-top:10px;
 }
 .color-text{
     color: var(--lightRed);
 }
 #hero-section{
-    padding-top: 10%;
+    padding-top: 15%;
+    padding-bottom: 10%;
     object-fit: cover;
     background-image: url("../assets/img/cinema.jpg");
     background-color: red;
     align-items: center;
     text-align: center;
-    padding-bottom: 10%;
 }
 
 
@@ -135,4 +137,55 @@ nav ul{
 .heading h3{
     text-transform: capitalize;
     font-size: 32px;
+}
+.row{
+    padding-bottom: 40px;
+}
+#location-img{
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+    word-wrap: break-word;
+}
+#gmap{
+    border-radius: 10px;
+    margin-top: 15px;
+}
+/*cards*/
+
+.card{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+.card-text{
+    width: 75%;
+}
+.card-icon{
+    width: 55px;
+    height: 55px;
+    transition: transform 2s;
+}
+.card-icon i{
+    width: 55px;
+    height: 55px;
+    background-color: var(--lightRed);
+    color: var(--white);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    font-size: 30px;
+}
+.card-icon:hover{
+transform: rotate(360deg);
+}
+.card-text h4{
+    margin-bottom: 15px;
+    transition: color 500ms;
+}
+.card-text h4:hover{
+    color: var(--lightRed);
+}
+.card-text p{
+    text-align: justify;
 }
