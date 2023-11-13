@@ -1,0 +1,138 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+:root{
+    --darkGrey:#545454;
+    --white:#fff;
+    --lightRed:#9356e9;
+    --lightGrey:#f8f9fa;
+}
+body{
+    color:var(--darkGrey);
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    color:var(--darkGrey);
+    text-decoration: none;
+}
+.center-block{
+    width:75%;
+    margin: 0px auto;
+}
+ul{
+    list-style-type:none;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.space-between{
+    justify-content: space-between;
+}
+#main-header{
+    padding: 20px;
+    background-color: #f0f0f0;
+    position: fixed;
+    width: 100%;
+}
+#logo h1{
+    font-size: 28px;
+}
+nav li{
+    margin-left: 30px;
+}
+nav ul li a{
+    font-size: 18px;
+    color: var(--lightRed);
+    transition: color 500ms;
+}
+nav ul li a:hover, nav ul .active-link a{
+    color: var(--darkGrey);
+}
+nav ul{
+    margin-top:12px;
+}
+.color-text{
+    color: var(--lightRed);
+}
+#hero-section{
+    padding-top: 10%;
+    object-fit: cover;
+    background-image: url("../assets/img/cinema.jpg");
+    background-color: red;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+
+
+/*Filmovi*/
+.gallery-image{
+    width: 23%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.gallery-image img{
+    width: 100%;
+    border-radius: 5px;
+}
+.gallery-image .gallery-info{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.gallery-image .gallery-info::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    content: "";
+    opacity: 0;
+    background: var(--lightRed);
+    transition: 500ms;
+}
+.gallery-image .gallery-info:hover::after{
+    opacity: 0.7;
+}
+.gallery-image .gallery-info h4, .gallery-image .gallery-info small{
+    transform: translateY(100%);
+    opacity: 0;
+    display: block;
+    transition: 500ms 200ms;
+    color: var(--lightRed);
+    z-index:2;
+    position:relative;
+}
+
+.gallery-image:hover .gallery-info h4, .gallery-image:hover .gallery-info small{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.gallery-image .gallery-info small{
+    color: #d9d9d9;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 3px;
+}
+
+.heading{
+    text-align: center;
+    padding: 40px 0px;
+}
+.heading h3{
+    text-transform: capitalize;
+    font-size: 32px;
+}
