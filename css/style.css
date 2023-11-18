@@ -233,13 +233,17 @@ h1{
     color:white;
     margin-bottom: 20px;
 }
-#catalog{
-
+#catalog-button{
+    transform: rotateX(180deg)
     text-decoration: none;
     color:white;
     padding: 10px;
     background-color: #6c24d1;
     border-radius: 20px;
+}
+#catalog-button:hover{
+    transform: scale(2,2)
+    transition: ease 2s;
 }
 .gallery-image-img{
     width: 320px;
