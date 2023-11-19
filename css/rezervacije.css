@@ -1,0 +1,50 @@
+.form-row{
+    margin-bottom: 3%;
+    padding-top: 3%;
+}
+.form-group{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"]{
+    width:98%;
+    padding: 2% 1%;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+input[type="button"]{
+    border:none;
+    background-color: var(--lightRed);
+    color:var(--white);
+    border-radius: 3px;
+    padding: 10px;
+}
+#contact p{
+    font-size: 14px;
+    margin-left: 5px;
+    color:rgba(0, 0, 0, 0.9);
+}
+#contact{
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+select{
+    border-radius: 4px;
+    padding: 10px 10px;
+}
+.radio-wrapper{
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    padding: 15px 15px;
+    background-color: var(--lightRed);
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+}
+#contact-form{
+    padding: 10px 50px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/rezervacije.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Fonflix - O nama</title>
+</head>
+<body>
+    <header>
+        <!-- Start bottom header section -->
+        <div id="main-header">
+            <div class="center-block navbar-wrapper space-between">
+                <div id="logo">
+                    <a href="index.html"><img id="logo-img" src="../assets/img/fonflixlogosmall.webp" alt=""></a>
+                </div>
+                <nav>
+                    <ul class="navbar-wrapper">
+                        <li >
+                            <a href="index.html">Početna</a>
+                        </li>
+                        <li>
+                            <a href="../html/filmovi.html" class="nav-link">Filmovi</a> 
+                        </li>
+                        <li>
+                            <a href="onama.html" class="nav-link">O nama</a>
+                        </li>
+                        <li class="active-link">
+                            <a href="#" class="nav-link">Rezervacija</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="contact">
+        <div class="center-block">
+            <div class="heading">
+                <h3>Rezervacija <span class="color-text">filmova</span></h3>
+            </div>
+            <div class="info-card">
+                <form id="contact-form">
+
+                    <!-- 1. row -->
+                    <div class="form-row wrapper space-between">
+                        <div class="form-group">
+                            <label for="tbIme">Ime</label>
+                            <input type="text" id="tbIme" placeholder="Pera" />
+                            <p></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="tbPrezime">Prezime</label>
+                            <input type="text" id="tbPrezime" placeholder="Perić"  />
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <!-- 3. row -->
+                    <div class="form-row wrapper space-between">
+                        <div class="form-group">
+                            <label for="movie-list">Odaberi film</label>
+                            <select name="Filmovi" id="movie-list">
+                                <optgroup label="Akcioni">
+                                    <option value="endgame">Avengers Endgame</option>
+                                    <option value="jonhwick">Jonh Wick</option>
+                                    <option value="fastx">The Fast And Furious X</option>
+                                    <option value="oppenheimer">Oppenheimer</option>
+                                </optgroup>
+                                <optgroup label="Horor">
+                                    <option value="brightburn">Brightburn</option>
+                                    <option value="poltergeist">Poltergeist</option>
+                                    <option value="theconjuring">The Conjuring</option>
+                                    <option value="thenun2">The Nun 2</option>
+                                </optgroup>
+                                <optgroup label="Komedija">
+                                    <option value="freeguy">Free Guy</option>
+                                    <option value="mariobros">Super Mario Bros</option>
+                                    <option value="theburbs">The Burbs</option>
+                                    <option value="escapefromearth">Escape From Planet Earth</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date-list">Odaberi datum</label>
+                        <select name="Datumi" id="date-list">
+                            <option value="date1">30.11.2023.</option>
+                            <option value="date2">05.12.2023.</option>
+                            <option value="date3">07.12.2023.</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <!-- 4. row -->
+                    <div class="form-row wrapper radio-wrapper">
+                        <div>
+                            <input type="radio" name="2D" id="2d">
+                            <label for="rez">2D</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="3D" id="3d">
+                            <label for="rez">3D</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="4DX" id="4dx">
+                            <label for="rez">4DX</label>
+                        </div>
+                        <div>
+                            <button type="submit">Potvrdi</button>
+                        </div>
+                    </div>
+                </form>
+                <p id="message"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center-block">
+            <center>
+                <h2>
+                    <a href="index.html">FON<span class="color-text">flix</span></a>
+                </h2>
+            </center>  
+        </div>
+    </footer>
+</body>
+</html>
