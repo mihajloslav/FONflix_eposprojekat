@@ -16,7 +16,7 @@ input[type="text"]{
 }
 input[type="button"]{
     border:none;
-    background-color: var(--lightRed);
+    background-color: var(--lightPurple);
     color:var(--white);
     border-radius: 3px;
     padding: 10px;
@@ -40,11 +40,40 @@ select{
 }
 button{
     padding: 15px 15px;
-    background-color: var(--lightRed);
+    background-color: var(--lightPurple);
     font-size: 20px;
     border-radius: 10px;
     color: white;
 }
+
+button:hover{
+    animation: wiggle 2s linear infinite;
+}
+
 #contact-form{
     padding: 10px 50px;
 }
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }

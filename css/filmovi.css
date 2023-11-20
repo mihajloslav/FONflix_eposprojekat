@@ -1,3 +1,4 @@
+
 #pickgenre{
     position: fixed;
     left: 5%;
@@ -28,4 +29,17 @@ button:hover{
     padding-bottom: 40px;
     display: flex;
     flex-direction: column;
+}
+.movies{
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+
+button:hover{
+    animation: b-hover 2s alternate infinite;
+}
+
+@keyframes b-hover {
+    from {background-color: var(--lightPurple);}
+    to {background-color: var(--darkPurple);}
 }
