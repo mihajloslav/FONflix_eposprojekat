@@ -24,3 +24,48 @@ function hide(genre) {
             break;
     }
 }
+
+function ToggleBurger() {
+    const buttons = document.querySelectorAll(".nav-button");
+    if (buttons[0].style.display == "none") {
+      ShowBurgerButtons();
+    } else {
+      HideBurgerButtons();
+    }
+  }
+  
+  function ShowBurgerButtons() {
+    const buttons = document.querySelectorAll(".nav-button");
+    buttons.forEach((button) => {
+      
+        button.style.display = "unset";
+      
+    });
+    const expand = document.querySelectorAll(".expand-on-mobile");
+    expand[0].style.height = "100px";
+  }
+  
+  function HideBurgerButtons() {
+    const buttons = document.querySelectorAll(".nav-button");
+    buttons.forEach((button) => {
+      
+        button.style.display = "none";
+      
+    });
+    const expand = document.querySelectorAll(".expand-on-mobile");
+    expand[0].style.height = "0px";
+  }
+  
+  function viewForm() {
+    if (window.innerWidth > 700) {
+
+      ShowBurgerButtons();
+              const expand = document.querySelectorAll(".expand-on-mobile");
+        expand[0].style.height = "0px";
+    } else {
+
+      HideBurgerButtons();
+    }
+  }
+  
+  window.addEventListener("resize", viewForm);
