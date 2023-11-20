@@ -11,33 +11,39 @@
     <link rel="icon" type="image/x-icon" href="../assets/img/logo-top.ico"/>
     <title>Fonflix</title>
 </head>
-<body>
+<body  onload="viewForm()">
     <header>
         <!-- Start bottom header section -->
         <div id="main-header">
-            <div class="center-block navbar-wrapper space-between">
+            <div class="center-block wrapper space-between">
                 <div id="logo">
                     <a href="index.html"><img id="logo-img" src="../assets/img/fonflixlogosmall.webp" alt=""></a>
                 </div>
                 <nav>
                     <ul class="navbar-wrapper">
-                        <li class="active-link">
-                            <a href="index.html">Početna</a>
+                        <li class="burger">
+                            <img src="../assets/img/logo-small.png" onclick="ToggleBurger()"></img> 
                         </li>
-                        <li>
-                            <a href="../html/filmovi.html" class="nav-link">Filmovi</a> 
+                        <li class="navbar-li">
+                            <a href="nav-button index.html" class="nav-button nav-link">Početna</a>
                         </li>
-                        <li>
-                            <a href="onama.html" class="nav-link">O nama</a>
+                        <li class="navbar-li">
+                            <a href="../html/filmovi.html" class="nav-button nav-link">Filmovi</a> 
                         </li>
-                        <li>
-                            <a href="rezervacije.html" class="nav-link">Rezervacija</a>
+                        <li class="navbar-li">
+                            <a href="onama.html" class="nav-button nav-link">O nama</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a href="rezervacije.html" class="nav-button nav-link">Rezervacija</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <div class="expand-on-mobile"></div>
+    <main>
+        <div class="expand-on-mobile"></div>
     <section id="hero-section">
 
         <h1>Omiljeni bioskop studenata.</h1>
@@ -115,6 +121,7 @@
             </div>
         </div>
     </section>
+</main>
     <footer>
         <div class="center-block">
             <center>

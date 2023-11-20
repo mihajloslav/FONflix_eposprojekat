@@ -12,7 +12,7 @@
 <link rel="icon" type="image/x-icon" href="../assets/img/logo-top.ico"/>
     <title>Fonflix - O nama</title>
 </head>
-<body>
+<body  onload="viewForm()">
     <header>
         <!-- Start bottom header section -->
         <div id="main-header">
@@ -22,24 +22,29 @@
                 </div>
                 <nav>
                     <ul class="navbar-wrapper">
+                        <li class="burger">
+                            <img src="../assets/img/logo-small.png" onclick="ToggleBurger()"></img> 
+                        </li>
                         <li >
-                            <a href="index.html">Početna</a>
+                            <a href="index.html" class="nav-button nav-link">Početna</a>
                         </li>
                         <li>
-                            <a href="../html/filmovi.html" class="nav-link">Filmovi</a> 
+                            <a href="../html/filmovi.html" class="nav-button nav-link">Filmovi</a> 
                         </li>
                         <li class="active-link">
-                            <a href="onama.html" class="nav-link">O nama</a>
+                            <a href="onama.html" class="nav-button nav-link">O nama</a>
                         </li>
                         <li>
-                            <a href="rezervacije.html" class="nav-link">Rezervacija</a>
+                            <a href="rezervacije.html" class="nav-button nav-link">Rezervacija</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+<main>
     <section id="about-me">
+        <div class="expand-on-mobile"></div>
         <div class="center-block">
             <div class="heading">
             <h1>O <span class="red-text">nama</span></h1>
@@ -55,6 +60,7 @@
             </div>
         </div>
     </section>
+</main>
     <footer>
         <div class="center-block">
             <center>
@@ -63,6 +69,7 @@
                 </h2>
             </center>  
         </div>
+        <script src="../javascript/script.js"></script>
     </footer>
 </body>
 </html>

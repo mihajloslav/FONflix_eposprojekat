@@ -20,14 +20,14 @@ a{
     color:var(--darkGrey);
     text-decoration: none;
 }
-.center-block{
+.center-block{ /*centrira u sredinu*/
     width:75%;
     margin: 0px auto;
 }
 ul{
     list-style-type:none;
 }
-.wrapper{
+.wrapper{ /*postavlja elemente da budu jedan pored drugog*/
     display: flex;
     flex-wrap: wrap;
 }
@@ -38,10 +38,24 @@ ul{
     align-items: center;
 }
 
-.space-between{
+.burger{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.burger img{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+
+
+.space-between{/*postavlja razmak izmedju elemenata*/
     justify-content: space-between;
 }
-#main-header{
+#main-header{ /*header*/
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: #f0f0f0;
@@ -71,7 +85,7 @@ nav ul{
     color: var(--lightPurple);
 }
 
-#hero-section{
+#hero-section{ /*banner*/
     padding-top: 15%;
     padding-bottom: 10%;
     object-fit: cover;
@@ -164,6 +178,8 @@ nav ul{
 .row{
     padding-bottom: 40px;
 }
+
+/*Lokacija*/
 #location-img{
     width: 48px;
     height: 48px;
@@ -176,44 +192,6 @@ nav ul{
 #gmap{
     border-radius: 10px;
     margin-top: 15px;
-}
-/*cards*/
-
-.card{
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
-}
-.card-text{
-    width: 75%;
-}
-.card-icon{
-    width: 55px;
-    height: 55px;
-    transition: transform 2s;
-}
-.card-icon i{
-    width: 55px;
-    height: 55px;
-    background-color: var(--lightPurple);
-    color: var(--white);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 55px;
-    font-size: 30px;
-}
-.card-icon:hover{
-transform: rotate(360deg);
-}
-.card-text h4{
-    margin-bottom: 15px;
-    transition: color 500ms;
-}
-.card-text h4:hover{
-    color: var(--lightPurple);
-}
-.card-text p{
-    text-align: justify;
 }
 
 #radno-vreme{
@@ -261,3 +239,47 @@ h1{
     width: 320px;
     height: 320px;
 }
+
+
+@media only screen and (max-width: 700px) {
+    .burger{
+        display: unset;
+    }
+    
+    .burger img{
+        display: unset;
+    }
+
+    .navbar-wrapper {
+flex-direction: column;
+    }
+
+    .wrapper{
+        flex-direction: column;
+    }
+    .gallery-image-img{
+        width: 200px;
+        height: 320px;
+    }
+    .gallery-image{
+        width: 100%;
+        padding-bottom: 20px;
+      
+    }
+    .navbar-wrapper li{
+        margin-bottom: 5px;
+    }
+    #logo{
+    margin: auto;
+    }
+    #timetable{
+        width: 100%;
+    }
+    info-card{
+        
+    }
+    main{
+        padding-top: 100px;
+    }
+    
+  }
