@@ -35,6 +35,12 @@ function ToggleBurger() {
   }
   
   function ShowBurgerButtons() {
+
+    const list_items = document.querySelectorAll(".navbar-li");
+    list_items.forEach((li) => {
+        li.style.display = "block";
+    })
+
     const buttons = document.querySelectorAll(".nav-button");
     buttons.forEach((button) => {
       
@@ -42,10 +48,17 @@ function ToggleBurger() {
       
     });
     const expand = document.querySelectorAll(".expand-on-mobile");
-    expand[0].style.height = "100px";
+    expand[0].style.height = "150px";
+
   }
   
   function HideBurgerButtons() {
+
+    const list_items = document.querySelectorAll(".navbar-li");
+    list_items.forEach((li) => {
+        li.style.display = "none";
+    })
+
     const buttons = document.querySelectorAll(".nav-button");
     buttons.forEach((button) => {
       

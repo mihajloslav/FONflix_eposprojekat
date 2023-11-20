@@ -31,6 +31,12 @@ ul{
     display: flex;
     flex-wrap: wrap;
 }
+
+
+.navbar-li {
+    display: none;
+}
+
 .navbar-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -41,6 +47,7 @@ ul{
 .burger{
     width: 40px;
     height: 40px;
+    margin-bottom: 10px;
     display: none;
 }
 
@@ -98,13 +105,23 @@ nav ul{
     text-align: center;
 }
 
+
+.grid_wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 100%));
+    width: 100%;
+    gap: 5px;
+}
+
 /*Filmovi*/
 .gallery-image{
-    width: 23%;
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    grid-column: span 3 / span 3;
 }
+
+
 .gallery-image img{
     width: 100%;
     border-radius: 5px;
@@ -179,13 +196,21 @@ nav ul{
     padding-bottom: 40px;
 }
 
+
 /*Lokacija*/
-#location-img{
+.location-img{
     width: 48px;
     height: 48px;
     margin-right: 10px;
     word-wrap: break-word;
 }
+
+.img_wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 #location{
     padding-bottom: 5%;
 }
@@ -217,8 +242,12 @@ footer{
 .info-card{
     border-radius: 10px;
     background-color: #f0f0f0;
-    padding: 15px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 h1{
     color:white;
     margin-bottom: 20px;
@@ -241,9 +270,34 @@ h1{
 }
 
 
+@media only screen and (max-width: 1000px) {
+    .gallery-image{
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        grid-column: span 6 / span 6;
+        width: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .gallery-image{
+        width: 350px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        grid-column: span 12 / span 12;
+        margin-left: 75px;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .burger{
         display: unset;
+    }
+    .navbar-li {
+        margin-bottom: 10px;
     }
     
     .burger img{
@@ -251,7 +305,7 @@ h1{
     }
 
     .navbar-wrapper {
-flex-direction: column;
+        flex-direction: column;
     }
 
     .wrapper{
@@ -266,9 +320,6 @@ flex-direction: column;
         padding-bottom: 20px;
       
     }
-    .navbar-wrapper li{
-        margin-bottom: 5px;
-    }
     #logo{
     margin: auto;
     }
@@ -281,5 +332,24 @@ flex-direction: column;
     main{
         padding-top: 100px;
     }
+
+    #main-header{ /*header*/
+        padding-top: 15px;
+        background-color: #f0f0f0;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+        align-items: center;
+        align-content: center;
+        
+    }
     
+    .gallery-image{
+        width: 350px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        grid-column: span 12 / span 12;
+        margin-left: 35px;
+    }
   }
