@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/filmovi.css">    
+<link rel="stylesheet" href="../css/filmovi.css">  
 <title>Fonflix - Filmovi</title>
 </head>
 <body>
@@ -39,20 +39,18 @@
     </header>
     <section id="pickgenre">
         <div class="center-block">
-            <div class="heading">
-                <h3>Filmovi</h3>
-            </div>
-            <div class="row wrapper center-block">
-                <button id="genreall" onclick="hide()">Svi</button>
-                <button id="genreaction" onclick="hide()">Akcioni</button>
-                <button id="genreghorror" onclick="hide()">Horor</button>
-                <button id="genrecomedy" onclick="hide()">Komedija</button>
+            <div class="row-genres wrapper center-block">
+                <button onclick="hide(1)">Svi</button>
+                <button onclick="hide(2)">A</button>
+                <button onclick="hide(3)">H</button>
+                <button onclick="hide(4)">K</button>
             </div>
             </div>
             </div>
         </div>
     </section>
     <section id="gallery" class="movies">
+    <div id="genreaction">
         <div class="center-block">
             <div class="heading">
                 <h3>
@@ -98,6 +96,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div id="genrehorror">
         <div class="center-block">
             <div class="heading">
                 <h3>
@@ -143,6 +143,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div id="genrecomedy">
         <div class="center-block">
             <div class="heading">
                 <h3>
@@ -188,6 +190,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <footer>
         <div class="center-block">
@@ -198,5 +201,6 @@
             </center>  
         </div>
     </footer>
+    <script src="../javascript/script.js"></script>
 </body>
 </html>

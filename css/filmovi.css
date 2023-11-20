@@ -1,10 +1,32 @@
 #pickgenre{
-    padding-top: 10%;
+    position: fixed;
+    left: 5%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
 }
 button{
+    min-width: 20px;
     font-size: large;
     padding: 10px;
     border-radius: 20px;
     border: 1px solid #9356e9;
-    margin-left: 10px;
+    color: white;
+    background-color: #9356e9;
+    margin-bottom: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #c099f5;
+    border: 1px solid #c099f5;
+}
+.row-genres
+{
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 }
