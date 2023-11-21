@@ -10,11 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="../assets/img/logo-top.ico"/>
-    <title>Fonflix - O nama</title>
+    <title>Fonflix - Rezervacije</title>
 </head>
-<body  onload="viewForm()">
+<body  onload="Resize()">
     <header>
-        <!-- Start bottom header section -->
         <div id="main-header">
             <div class="center-block navbar-wrapper space-between">
                 <div id="logo">
@@ -47,28 +46,25 @@
         <div class="expand-on-mobile"></div>
         <div class="center-block">
             <div class="heading">
-                <h3>Rezervacija <span class="color-text">filmova</span></h3>
+                <h1>Rezervacija <span class="color-text">filmova</span></h1>
             </div>
             <div class="info-card">
                 <form id="contact-form">
-
-                    <!-- 1. row -->
-                    <div class="form-row wrapper space-between">
-                        <div class="form-group">
-                            <label for="tbIme">Ime</label>
-                            <input type="text" id="tbIme" placeholder="Pera" />
+                    <div class="form-row wrapper space-between streachPhone">
+                        <div class="form-group streachPhone">
+                            <label class="streachPhone" for="tbIme">Ime</label>
+                            <input class="streachPhone" type="text" id="tbIme" placeholder="Pera" />
                             <p></p>
                         </div>
-                        <div class="form-group">
-                            <label for="tbPrezime">Prezime</label>
-                            <input type="text" id="tbPrezime" placeholder="Perić"  />
+                        <div class="form-group streachPhone">
+                            <label class="streachPhone" for="tbPrezime">Prezime</label>
+                            <input class="streachPhone" type="text" id="tbPrezime" placeholder="Perić"  />
                             <p></p>
                         </div>
                     </div>
 
-                    <!-- 3. row -->
-                    <div class="form-row wrapper space-between">
-                        <div class="form-group">
+                    <div class="form-row wrapper space-between streachPhone">
+                        <div class="form-group streachPhone">
                             <label for="movie-list">Odaberi film</label>
                             <select name="Filmovi" id="movie-list">
                                 <optgroup label="Akcioni">
@@ -92,7 +88,7 @@
                             </select>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group streachPhone">
                             <label for="date-list">Odaberi datum</label>
                         <select name="Datumi" id="date-list">
                             <option value="date1">30.11.2023.</option>
@@ -102,19 +98,20 @@
                         </div>
                     </div>
 
-                    <!-- 4. row -->
                     <div class="form-row wrapper radio-wrapper">
+                        <div class="fleksPhone">
                         <div>
-                            <input type="radio" name="2D" id="2d">
+                            <input type="radio" name="x" id="2d">
                             <label for="rez">2D</label>
                         </div>
                         <div>
-                            <input type="radio" name="3D" id="3d">
+                            <input type="radio" name="x" id="3d">
                             <label for="rez">3D</label>
                         </div>
                         <div>
-                            <input type="radio" name="4DX" id="4dx">
+                            <input type="radio" name="x" id="4dx">
                             <label for="rez">4DX</label>
+                        </div>
                         </div>
                         <div>
                             <button type="submit">Potvrdi</button>

@@ -188,9 +188,15 @@ nav ul{
     text-align: center;
     padding: 40px 0px;
 }
+.heading h1{
+    text-transform: capitalize;
+    font-size: 32px;
+    color:black;
+}
 .heading h3{
     text-transform: capitalize;
     font-size: 32px;
+    color:black;
 }
 .row{
     padding-bottom: 40px;
@@ -226,14 +232,7 @@ nav ul{
 .info{
     max-width: 500px;
 }
-footer{
-    /*position: fixed;
-    width: 100%;
-    bottom: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #f0f0f0;*/
-}
+
 #timetable{
     width: 400px;
     height: 250px;
@@ -253,16 +252,12 @@ h1{
     margin-bottom: 20px;
 }
 #catalog-button{
-    transform: rotateX(180deg);
     text-decoration: none;
     color:white;
     padding: 10px;
     background-color: #6c24d1;
     border-radius: 20px;
-}
-#catalog-button:hover{
-    transform: scale(2,2);
-    transition: ease 2s;
+    animation: catalog 3s infinite;
 }
 .gallery-image-img{
     width: 320px;
@@ -353,3 +348,15 @@ h1{
         margin-left: 35px;
     }
   }
+
+@keyframes catalog {
+    0% {
+        background-color: var(--darkPurple);
+    }
+    50% {
+        background-color: var(--lightPurple);
+    }
+    100% {
+        background-color: var(--darkPurple);
+    }
+}

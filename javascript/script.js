@@ -1,4 +1,4 @@
-function hide(genre) {
+const hide = (genre) =>{
     let comedy = document.querySelector("#genrecomedy");
     let horror = document.querySelector("#genrehorror");
     let action = document.querySelector("#genreaction");
@@ -25,60 +25,50 @@ function hide(genre) {
     }
 }
 
-function ToggleBurger() {
+const ToggleBurger = ()  =>{
     const buttons = document.querySelectorAll(".nav-button");
     if (buttons[0].style.display == "none") {
-      ShowBurgerButtons();
+        _showbuttons();
     } else {
-      HideBurgerButtons();
+        _hidebuttons();
     }
-  }
+}
   
-  function ShowBurgerButtons() {
-
+const _showbuttons = () => {
     const list_items = document.querySelectorAll(".navbar-li");
+    const buttons = document.querySelectorAll(".nav-button");
+    const expand = document.querySelectorAll(".expand-on-mobile");
     list_items.forEach((li) => {
         li.style.display = "block";
     })
-
-    const buttons = document.querySelectorAll(".nav-button");
     buttons.forEach((button) => {
-      
         button.style.display = "unset";
-      
     });
-    const expand = document.querySelectorAll(".expand-on-mobile");
     expand[0].style.height = "150px";
-
-  }
+}
   
-  function HideBurgerButtons() {
-
+const _hidebuttons = () => {
     const list_items = document.querySelectorAll(".navbar-li");
+    const buttons = document.querySelectorAll(".nav-button");
+    const expand = document.querySelectorAll(".expand-on-mobile");
     list_items.forEach((li) => {
         li.style.display = "none";
     })
-
-    const buttons = document.querySelectorAll(".nav-button");
-    buttons.forEach((button) => {
-      
-        button.style.display = "none";
-      
+    buttons.forEach((button) => { 
+        button.style.display = "none";  
     });
-    const expand = document.querySelectorAll(".expand-on-mobile");
     expand[0].style.height = "0px";
   }
   
-  function viewForm() {
+const Resize= () => {
     if (window.innerWidth > 700) {
-
-      ShowBurgerButtons();
-              const expand = document.querySelectorAll(".expand-on-mobile");
+        _showbuttons();
+        const expand = document.querySelectorAll(".expand-on-mobile");
         expand[0].style.height = "0px";
-    } else {
-
-      HideBurgerButtons();
+    } 
+    else {
+        _hidebuttons();
     }
-  }
+}
   
-  window.addEventListener("resize", viewForm);
+window.addEventListener("resize", Resize);
